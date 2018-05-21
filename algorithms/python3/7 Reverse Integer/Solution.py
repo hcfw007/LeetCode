@@ -1,3 +1,5 @@
+import math
+
 class Solution:
     def reverse(self, x):
         num = int(str(abs(x))[::-1])
