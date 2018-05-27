@@ -5,5 +5,5 @@ class Solution(object):
             if nums[i] == val:
                 del nums[i]
             else:
-                i = i+1
+                i = i + 1
         return len(nums)
