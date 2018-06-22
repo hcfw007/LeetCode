@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def lengthOfLastWord(self, s):
         s = s.rstrip()
         ans = s.rfind(" ")

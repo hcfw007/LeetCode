@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def mySqrt(self, x):
         n = 0
         while (10 ** n < x): n += 1

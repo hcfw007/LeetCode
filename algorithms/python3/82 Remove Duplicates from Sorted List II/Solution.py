@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def deleteDuplicates(self, head):
         c = head
         if (c == None or c.next == None): return head

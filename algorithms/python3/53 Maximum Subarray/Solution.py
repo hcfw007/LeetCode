@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def maxSubArray(self, nums):        
         if not nums: return 0
         maximum = running_total = nums[0]

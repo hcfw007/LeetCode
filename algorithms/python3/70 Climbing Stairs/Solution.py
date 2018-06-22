@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def climbStairs(self, n):
         if (n == 0 or n == 1): return 1
         l = [1, 1]

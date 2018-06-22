@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def removeElement(self, nums, val):
         i = 0
         while i < len(nums):
