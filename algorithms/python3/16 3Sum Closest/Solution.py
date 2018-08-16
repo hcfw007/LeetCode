@@ -13,7 +13,7 @@ class Solution:
                 if abs(sum - target) < abs(ans - target):
                     ans = sum
                 if sum < target:
-                    j += 1
+                    l += 1
                 elif sum > target:
-                    k -= 1
+                    r -= 1
         return ans
