@@ -6,24 +6,13 @@ class Solution:
         current = []
         candidates.sort()
 
-        def checkExistance(arrs: List[List], node: List[int]) -> bool:
-            for arr in arrs:
-                if len(arr) != len(node): continue
-                for i in range(len(arr)):
-                    if arr[i] != node[i]:
-                        break
-                else:
-                    print(node, 'Duplicated')
-                    return True
-            
-            return False
-
         def generate(numbers: List[int], target: int) -> None:
             for index in range(len(numbers)):
                 number = numbers[index]
+                if index > 0 and number == numbers[index - 1]: continue
                 if number == target:
                     current.append(number)
-                    if not checkExistance(ans, current): ans.append(current[:])
+                    ans.append(current[:])
                     current.pop()
                     return
                 if number < target:
