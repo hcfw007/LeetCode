@@ -3,7 +3,6 @@ class Solution:
         max_length = 0
         i = 0
         while i < len(s):
-            print(i)
             if i + max_length > len(s) - 1: break
             current_length = 0
             debt = 0
@@ -14,7 +13,6 @@ class Solution:
                     debt += 1
                 else:
                     debt -= 1
-                    print(debt, debt_pivot)
                     if debt_pivot > debt: debt_pivot = debt
                 if debt == 0:
                     current_length = j + 1
@@ -22,7 +20,6 @@ class Solution:
             if current_length > max_length:
                 max_length = current_length
 
-                print(i, current_length)
                 i += current_length
                 
                 continue

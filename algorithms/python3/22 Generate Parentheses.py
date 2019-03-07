@@ -12,4 +12,3 @@ class Solution:
                 generate(current + ')', pairs, debt - 1)
 
         generate('', n, 0)
-        print(list)

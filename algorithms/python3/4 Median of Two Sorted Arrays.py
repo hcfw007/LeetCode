@@ -1,4 +1,3 @@
-from typing import List
 from math import floor, ceil
 
 class Solution:
